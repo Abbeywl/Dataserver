@@ -1,19 +1,19 @@
 <template>
 	<view class="page">
 		<scroll-view  @scroll="leftScroll" class="left_view p_r" scroll-y :style="{ height: scrollH + 'px' }" :scroll-into-view="leftScrollTop()">
-			<block v-for="(item, index) in dataArr" :key="index">
-				<view v-if='item.DisplayName!="用户角色"' :class="[left_selectIndex == index ? 'left_item_s' : '', 'left_item']" :id="'left_' + index" @click="leftTap({ item, index })">{{ item.DisplayName }}</view>
+			<block  v-for="(item, index) in dataArr" :key="index" v-if='item.DisplayName!="用户角色"'>
+				<view :class="[left_selectIndex == index ? 'left_item_s' : '', 'left_item']" :id="'left_' + index" @click="leftTap({ item, index })">{{ item.DisplayName }}</view>
 			</block>
 			<view class="seletItem" :style="{ top: left_selectIndex * 60 + 'px' }"></view>
 			<view class="" style="height: 80px;"><!-- 站位 --></view>
 		</scroll-view>
 
 		<scroll-view @scroll="rightScroll" class="right_view" scroll-y :style="{ height: scrollH + 'px' }" :scroll-into-view="'left_' + right_selectIndex" scroll-with-animation>
-			<block v-for="(item, index) in dataArr" :key="index">
-				<view :ref="'left_' + index" class="right_item " :id="'left_' + index" v-if="item.DisplayName!='用户角色'">
+			<block v-for="(item, index) in dataArr" :key="index"  v-if="item.DisplayName!='用户角色'">
+				<view :ref="'left_' + index" class="right_item " :id="'left_' + index">
 					<text class="right_item_title ">{{ item.DisplayName }}</text>
 					<view class="right_item_view">
-						<view class="item" v-for="(subitem, subindex) in item.VisibleSubMenus" :key="subindex" @click="redirectToPage(subitem.url)">
+						<view class="item" v-for="(subitem, subindex) in item.VisibleSubMenus" :key="subindex" @click="redirectToPage(subitem.url)" v-show="subitem.isChecked">
 							<image :src="subitem.img" :style="{ width: '100%', height: subItemW + 'px' }"></image>
 							<text>{{ subitem.DisplayName }}</text>
 						</view>
@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import testdata from './testdata.js';
+// import testdata from './testdata.js';
 import browser from '../../common/js/browser.js';
 export default {
 	data() {
@@ -67,7 +67,7 @@ export default {
 			placeholderH: 0, //占位高度
 
 			heighArr: [],
-			dataArr: testdata
+			dataArr: []
 		};
 	},
 	onLoad() {
@@ -75,8 +75,20 @@ export default {
 		setTimeout(function() {
 			self.computerH();
 		}, 100);
+		this.initData()
+		console.log(this.dataArr)
+		// location.reload()
 	},
+	onShow: function () {
+		this.initData()
+	},
+	
 	methods: {
+		initData:function(e) {
+			let aa= uni.getStorageSync('mobileAppMenusData')
+			aa=JSON.parse(aa)
+			this.dataArr =aa
+		},
 		leftTap: function(e) {
 			this.left_selectIndex = e.index;
 			this.right_selectIndex = e.index;

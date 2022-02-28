@@ -22,7 +22,7 @@
 </template>
 
 <script>
-	import platformdata from './platform.json'
+	// import platformdata from './platform.json'
 	export default {
 		onLoad(option) {
 			//加载动画
@@ -33,7 +33,7 @@
 		},
 		data() {
 			return {
-				mobileAppMenusData:platformdata,//按钮总数据
+				mobileAppMenusData:'',//按钮总数据
 				resultDataList: [],
 			}
 		},
@@ -102,8 +102,10 @@
 				for (var i = 0, lenI = items.length; i < lenI; ++i) {
 					const item = items[i]
 					if (values.includes(item.ID)) {
+						this.$set(item, 'IsShow', true)
 						this.$set(item, 'isChecked', true)
 					} else {
+						this.$set(item, 'IsShow', false)
 						this.$set(item, 'isChecked', false)
 					}
 				}

@@ -1,88 +1,4 @@
 export default [{
-	"ID": 86,
-	"Name": "Service",
-	"WebClass": "laowuguanli",
-	"LinkHerf": "",
-	"ParentId": null,
-	"Sort": 2,
-	"RequireProject": true,
-	"VisibleSubMenus": [{
-		"ID": 87,
-		"Name": "Attendance",
-		"WebClass": "",
-		"LinkHerf": "/LaborManage/Index",
-		"ParentId": 86,
-		"Sort": 1,
-		"RequireProject": true,
-		"VisibleSubMenus": [],
-		"Module": "",
-		"Location": null,
-		"IsShow": false,
-		"DisplayName": "网络提供商",
-		"Type": null
-	}, {
-		"ID": 88,
-		"Name": "Leave",
-		"WebClass": "",
-		"LinkHerf": "/LaborManage/Left",
-		"ParentId": 86,
-		"Sort": 2,
-		"RequireProject": true,
-		"VisibleSubMenus": [],
-		"Module": "",
-		"Location": null,
-		"IsShow": false,
-		"DisplayName": "内容提供商",
-		"Type": null
-	}, {
-		"ID": 89,
-		"Name": "SheWolf",
-		"WebClass": "",
-		"LinkHerf": "/LaborManage/RealName",
-		"ParentId": 86,
-		"Sort": 3,
-		"RequireProject": true,
-		"VisibleSubMenus": [],
-		"Module": "",
-		"Location": null,
-		"IsShow": false,
-		"DisplayName": "设备提供商",
-		"Type": null
-	}, {
-		"ID": 90,
-		"Name": "SheWolf",
-		"WebClass": "",
-		"LinkHerf": "/LaborManage/RealName",
-		"ParentId": 87,
-		"Sort": 3,
-		"RequireProject": true,
-		"VisibleSubMenus": [],
-		"Module": "",
-		"Location": null,
-		"IsShow": false,
-		"DisplayName": "汽车制造商",
-		"Type": null
-	}, {
-		"ID": 90,
-		"Name": "SheWolf",
-		"WebClass": "",
-		"LinkHerf": "/LaborManage/RealName",
-		"ParentId": 87,
-		"Sort": 3,
-		"RequireProject": true,
-		"VisibleSubMenus": [],
-		"Module": "",
-		"Location": null,
-		"IsShow": true,
-		"DisplayName": "车载信息服务提供商(TSP)",
-		"Type": null
-	}],
-	"Module": "",
-	"Location": null,
-	"IsShow": true,
-	"DisplayName": "用户角色",
-	"Type": null
-}, {
 	"ID": 96,
 	"Name": "Equipment",
 	"WebClass": "shebeiguanli",
@@ -104,7 +20,8 @@ export default [{
 		"Location": null,
 		"IsShow": true,
 		"DisplayName": "身份认证",
-		"Type": null
+		"Type": null,
+		"isChecked": true
 	}, {
 		"ID": 98,
 		"Name": "Environment",
@@ -120,7 +37,8 @@ export default [{
 		"Location": null,
 		"IsShow": true,
 		"DisplayName": "授权功能",
-		"Type": null
+		"Type": null,
+		"isChecked": true
 	}],
 	"Module": "",
 	"Location": null,
@@ -150,7 +68,8 @@ export default [{
 		"Location": null,
 		"IsShow": true,
 		"DisplayName": "参数保护",
-		"Type": null
+		"Type": null,
+		"isChecked": true
 	}, {
 		"ID": 133,
 		"Name": "Materials",
@@ -166,7 +85,8 @@ export default [{
 		"img": "/static/work/SafetyManagement.png",
 		"url": "../issueSafety/issueSafetyCharts",
 		"DisplayName": "敏感数据保护",
-		"Type": null
+		"Type": null,
+		"isChecked": true
 	}],
 	"Module": "",
 	"Location": null,
@@ -196,7 +116,8 @@ export default [{
 		"img": "/static/work/Video.png",
 		"url": "../customerAnalysis/index",
 		"DisplayName": "加密功能",
-		"Type": null
+		"Type": null,
+		"isChecked": true
 	}],
 	"Module": "",
 	"Location": null,
@@ -222,7 +143,7 @@ export default [{
 		"VisibleSubMenus": [],
 		"Module": "",
 		"Location": null,
-		"IsShow": true,
+		"IsShow": false,
 		"img": "/static/work/EfficiencyAnalysis.png",
 		"url": "../cloudPlatfrom/index",
 		"DisplayName": "异常管理",
@@ -239,7 +160,7 @@ export default [{
 		"VisibleSubMenus": [],
 		"Module": "",
 		"Location": null,
-		"IsShow": true,
+		"IsShow": false,
 		"img": "/static/work/QualityManagement.png",
 		"url": "../server/index",
 		"DisplayName": "会话管理",
@@ -274,7 +195,8 @@ export default [{
 		"img": "/static/work/QA.png",
 		"url": "../contactCenter/index",
 		"DisplayName": "日志功能",
-		"Type": null
+		"Type": null,
+		"isChecked": true
 	}],
 	"Module": "",
 	"Location": null,
@@ -300,11 +222,12 @@ export default [{
 		"VisibleSubMenus": [],
 		"Module": "",
 		"Location": null,
-		"IsShow": true,
+		"IsShow": false,
 		"img": "/static/work/netTerminal.png",
 		"url": "../netTerminal/index",
 		"DisplayName": "配置管理",
-		"Type": null
+		"Type": null,
+		"isChecked": false
 	}],
 	"Module": "",
 	"Location": null,
@@ -334,7 +257,8 @@ export default [{
 		"img": "/static/work/regulation.png",
 		"url": "../interactMarket/index",
 		"DisplayName": "反调试技术",
-		"Type": null
+		"Type": null,
+		"isChecked": true
 	}, {
 		"ID": 136,
 		"Name": "QA",
@@ -346,15 +270,105 @@ export default [{
 		"VisibleSubMenus": [],
 		"Module": "",
 		"Location": null,
-		"IsShow": true,
+		"IsShow": false,
 		"img": "/static/work/Attendance.png",
 		"url": "../cloudComputing/index",
 		"DisplayName": "输入输出验证",
-		"Type": null
+		"Type": null,
+		"isChecked": false
 	}],
 	"Module": "",
 	"Location": null,
 	"IsShow": true,
 	"DisplayName": "技术手册",
+	"Type": null
+}, {
+	"ID": 86,
+	"Name": "Service",
+	"WebClass": "laowuguanli",
+	"LinkHerf": "",
+	"ParentId": null,
+	"Sort": 2,
+	"RequireProject": true,
+	"VisibleSubMenus": [{
+		"ID": 87,
+		"Name": "Attendance",
+		"WebClass": "",
+		"LinkHerf": "/LaborManage/Index",
+		"ParentId": 86,
+		"Sort": 1,
+		"RequireProject": true,
+		"VisibleSubMenus": [],
+		"Module": "",
+		"Location": null,
+		"IsShow": false,
+		"DisplayName": "网络提供商",
+		"Type": null,
+		"isChecked": false
+	}, {
+		"ID": 88,
+		"Name": "Leave",
+		"WebClass": "",
+		"LinkHerf": "/LaborManage/Left",
+		"ParentId": 86,
+		"Sort": 2,
+		"RequireProject": true,
+		"VisibleSubMenus": [],
+		"Module": "",
+		"Location": null,
+		"IsShow": false,
+		"DisplayName": "内容提供商",
+		"Type": null,
+		"isChecked": false
+	}, {
+		"ID": 89,
+		"Name": "SheWolf",
+		"WebClass": "",
+		"LinkHerf": "/LaborManage/RealName",
+		"ParentId": 86,
+		"Sort": 3,
+		"RequireProject": true,
+		"VisibleSubMenus": [],
+		"Module": "",
+		"Location": null,
+		"IsShow": false,
+		"DisplayName": "设备提供商",
+		"Type": null,
+		"isChecked": false
+	}, {
+		"ID": 90,
+		"Name": "SheWolf",
+		"WebClass": "",
+		"LinkHerf": "/LaborManage/RealName",
+		"ParentId": 87,
+		"Sort": 3,
+		"RequireProject": true,
+		"VisibleSubMenus": [],
+		"Module": "",
+		"Location": null,
+		"IsShow": false,
+		"DisplayName": "汽车制造商",
+		"Type": null,
+		"isChecked": true
+	}, {
+		"ID": 90,
+		"Name": "SheWolf",
+		"WebClass": "",
+		"LinkHerf": "/LaborManage/RealName",
+		"ParentId": 87,
+		"Sort": 3,
+		"RequireProject": true,
+		"VisibleSubMenus": [],
+		"Module": "",
+		"Location": null,
+		"IsShow": true,
+		"DisplayName": "车载信息服务提供商(TSP)",
+		"Type": null,
+		"isChecked": true
+	}],
+	"Module": "",
+	"Location": null,
+	"IsShow": true,
+	"DisplayName": "用户角色",
 	"Type": null
 }]

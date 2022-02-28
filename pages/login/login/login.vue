@@ -55,7 +55,7 @@
 <script>
 	var _this;
 
-
+import testdata from '../../work/testdata.js';
 	export default {
 		data() {
 			return {
@@ -79,6 +79,8 @@
 			},
 			toLogin() {
 				//this.$queue.showLoading('登录中...');
+				let a=JSON.stringify(testdata)
+				uni.setStorageSync('mobileAppMenusData', a)
 				this.$refs.uToast.show({
 					title: '登录成功',
 					position: 'bottom',

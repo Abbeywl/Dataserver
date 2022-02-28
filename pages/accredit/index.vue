@@ -4,6 +4,10 @@
 			<cardList title='张晓明' subTitle='' :borderIsRed="true" rightTitle="皖N·565778" :infoArr="infoArr()"
 				:cardBottom="cardBottom()" :cardListImg='img()' />
 		</navigator>
+		<navigator url="./accreditDetail">
+			<cardList title='王鹏' subTitle='' :borderIsRed="true" rightTitle="皖N·d444888" :infoArr="infoArr()"
+				:cardBottom="cardBottom()" :cardListImg='img1()' />
+		</navigator>
 		<!-- <cardList  title='title' subTitle='subTitle' :borderIsRed='false' rightTitle="rightTitle"  :cardBottom="cardBottom()" /> -->
 		<!-- <pictureList title='title' :infoArr="infoArr()" :listImg="img()"rightTitle="rightTitle" subTitle='subTitle' /> -->
 		<!-- <pictureList title='title' :infoArr="infoArr()"subTitle='subTitle' rightTitle="rightTitle"  /> -->
@@ -19,11 +23,20 @@
 			cardList,
 			RingChart
 		},
-
+		onNavigationBarButtonTap(e){
+			const index=e.index;
+			console.log(index)
+			if(index==0){
+				// uni.navigateTo({
+				// 	url:'platformconfig'
+				// })
+			}
+		},
 		data() {
 			return {
 			};
 		},
+		
 		methods: {
 			// 设置图片
 			img() {
