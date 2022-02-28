@@ -1,0 +1,38 @@
+{
+	"categories":["电视","网络","电影","报刊","公众号","广播"],
+	"series":[
+		{
+			"name":"青年",
+			"area":[123.45,234,192.5,245],
+			"color":"#1890ff",
+			"data":[50,300,250,40,200,30],
+			"index":0,
+			"legendShape":"circle",
+			"pointShape":"",
+			"show": true,
+			"type": "radar"
+		},
+		{
+			"name":"中年",
+			"area":[192.5,234,261.55,245],
+			"color":"#2fc25b",
+			"data":[100,200,150,100,150,50],
+			"index":0,
+			"legendShape":"circle",
+			"pointShape":"",
+			"show": true,
+			"type": "radar"
+		},
+		{
+			"name":"老年",
+			"area":[192.5,234,261.55,245],
+			"color":"#ff0000",
+			"data":[300,150,100,200,100,80],
+			"index":0,
+			"legendShape":"circle",
+			"pointShape":"",
+			"show": true,
+			"type": "radar"
+		}
+	]
+}

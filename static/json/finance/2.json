@@ -1,0 +1,33 @@
+{
+	"series": [
+		{
+			"data":[
+				{
+					"name": "维修数",
+					"value": 3,
+					"color":"#4DCCB3"
+				}, 
+				{
+					"name": "保养数",
+					"value": 10,
+					"color":"#5A77EC"
+				}, 
+				{
+					"name": "违规数",
+					"value": 5,
+					"color":"#4E94EC"
+				},
+				{
+					"name": "耗油数",
+					"value": 100,
+					"color":"#4FD4EB"
+				},
+				{
+					"name": "其他",
+					"value": 20,
+					"color":"#B5ED21"
+				} 
+			]
+		}
+	]
+}

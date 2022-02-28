@@ -1,0 +1,36 @@
+{
+		"categories": [
+			"丰田",
+			"比亚迪",
+			"凯迪拉克",
+			"吉利",
+			"奥迪"
+		],
+		"series": [{
+			"name": "当月业绩统计",
+			"data": [{
+					"value": 6,
+					"color": "#24ABFD"
+				},
+				{
+					"value": 3.2,
+					"color": "#24ABFD"
+				},
+				{
+					"value": 5.5,
+					"color": "#24ABFD"
+				},
+				{
+					"value": 8,
+					"color": "#24ABFD"
+				},
+				{
+					"value": 6,
+					"color": "#24ABFD"
+				}
+			],
+			"type": "column",
+			"color": "#24ABFD",
+			"unit": "%"
+		}]
+	}

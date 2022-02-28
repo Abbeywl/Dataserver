@@ -1,0 +1,51 @@
+	.u-row-center-important{
+		justify-content: center!important;
+	}
+	.u-col-top-important{
+		align-items: flex-start!important;
+	}
+	.u-text-right-important{
+		text-align:right !important;
+	}
+	.u-text-center-important{
+		text-align:center !important;
+	}
+	.u-inline-block{
+		display: inline-block;
+	}
+	.u-margin-auto{
+		margin: 0 auto;
+	}
+	.u-block{
+		display: block;
+	}
+	.u-break-word{
+		word-break: break-word;
+	}
+	.u-row-between-i{
+		justify-content: space-between!important;
+	}
+	.u-text-right-i{
+		text-align: right!important;
+	}
+	.u-text-center-i{
+		text-align: center!important;
+	}
+	/* 右边对齐 */
+	.u-row-right-i {
+		justify-content: flex-end!important;
+	}
+	.u-w-100{
+		width: 100%;
+	}
+	.u-h-100{
+		height: 100%;
+	}
+	.u-a-i-f-s{
+		align-items: flex-start;
+	}
+	.u-p-0-10{
+		padding: 0 10px;
+	}
+	
+	@for $i from 1 to 100 {				.u-width-#{$i}per{			width: $i * 1%;		}  	}

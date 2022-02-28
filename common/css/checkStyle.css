@@ -1,0 +1,19 @@
+uni-checkbox .uni-checkbox-input {
+			border-radius: 50%;
+		}
+uni-checkbox .uni-checkbox-input.uni-checkbox-input-checked {
+	border: 1px solid #32B067;
+	background-color: #32B067;
+}
+
+uni-checkbox .uni-checkbox-wrapper {
+	width: 100%;
+}
+
+uni-checkbox .uni-checkbox-input.uni-checkbox-input-checked:before{
+	color: #FFFFFF;
+}
+
+uni-checkbox:not([disabled]) .uni-checkbox-input:hover{
+	border-color: #32B067;
+}

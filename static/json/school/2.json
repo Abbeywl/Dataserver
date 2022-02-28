@@ -1,0 +1,28 @@
+{
+	"series": [
+		{
+			"data":[
+				{
+					"name": "0-20分钟",
+					"value": 100,
+					"color":"#FFBF31"
+				}, 
+				{
+					"name": "20-60分钟",
+					"value": 80,
+					"color":"#3CEFC4"
+				}, 
+				{
+					"name": "60-120分钟",
+					"value": 50,
+					"color":"#FFA9B3"
+				},
+				{
+					"name": "120分钟以上",
+					"value": 20,
+					"color":"#3CBBFF"
+				} 
+			]
+		}
+	]
+}

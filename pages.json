@@ -1,0 +1,562 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		//登录页页面
+		{
+			"path": "pages/login/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none",
+					"scrollIndicator": "none",
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/login/register/company",
+			"style": {
+				"navigationBarTitleText": "企业注册"
+			}
+		},
+		{
+			"path": "pages/login/register/person",
+			"style": {
+				"navigationBarTitleText": "个人注册"
+			}
+		},
+		{
+			"path": "pages/login/forget/person",
+			"style": {
+				"navigationBarTitleText": "忘记密码"
+			}
+		},
+		{
+			"path": "pages/login/register/select",
+			"style": {
+				"navigationBarTitleText": "角色选择"
+			}
+		},
+		{
+			"path": "pages/login/xieyi/xieyi",
+			"style": {
+				"navigationBarTitleText": "服务协议"
+			}
+		},
+		{
+			"path": "pages/login/yingsi/yingsi",
+			"style": {
+				"navigationBarTitleText": "隐私政策"
+			}
+		},
+		//首页
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"bounce": "none", //关掉回弹属性
+					"contentAdjust": false ,//解决ios第一次打开白条
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path" : "pages/work/work",
+			"style" : {
+				"navigationBarTitleText": "工作",
+				"app-plus": {
+					"bounce": "none" ,//关掉回弹属性
+					"titleNView": {
+					}
+				}
+			}
+		},
+		{
+		    "path" : "pages/server/index",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "会话管理",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		//配置工作台页面
+		{
+			"path": "pages/work/platformconfig",
+			"style": {
+				"navigationBarTitleText": "配置工作台",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "保存",
+							"fontSize": "16px",
+							"color": "#3096FA"
+						}],
+						"splitLine": {
+							"color": "#e8e8e8"
+						}
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/wkiwi-user/wkiwi-user",
+			"style": {
+				"navigationBarTitleText": "个人",
+				"app-plus": {
+					"bounce": "none" //关掉回弹属性
+				}
+			}
+		},
+	    {
+            "path" : "pages/registered/registered",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "注册账户信息",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+			"path": "pages/mine/u-avatar-cropper",
+			"style": {
+				"navigationBarTitleText": "头像裁剪",
+				"navigationBarBackgroundColor": "#000000"
+			}
+
+		},
+		//安全页面
+		 {
+			"path": "pages/issueSafety/issueSafety",
+			"style": {
+				"navigationBarTitleText": "协同办公",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"bounce": "none", //关掉回弹属性
+					"scrollIndicator": "none" ,//不需要显示滚动条
+					"titleNView": {
+						"splitLine": {
+							"color": "#e8e8e8"
+						}
+					}
+				}
+			}
+		
+		},
+		// 安全模块的统计页面
+		{
+			"path": "pages/issueSafety/issueSafetyCharts",
+			"style": {
+				"navigationBarTitleText": "敏感数据保护",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none" ,//关掉回弹属性
+					"titleNView": {
+						"splitLine": {
+							"color": "#e8e8e8"
+						}
+					}
+				}
+			}
+		
+		},
+		//安全的添加工单页面
+		{
+			"path": "pages/issueSafety/addIssueSafety",
+			"style": {
+				"navigationBarTitleText": "添加数据",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none" ,//关掉回弹属性
+					"titleNView": {
+						"splitLine": {
+							"color": "#e8e8e8"
+						},
+						"autoBackButton": false,
+						"buttons": [
+							{
+								"type": "back",
+								"float": "left",
+								"color": "#000"
+							}
+						]
+					}
+				}
+			}
+		
+		}, 
+		{
+			"path": "pages/issueSafety/issueSafetyDetails",
+			"style": {
+				"navigationBarTitleText": "工单详情",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none" ,//关掉回弹属性
+					"titleNView": {
+						"splitLine": {
+							"color": "#e8e8e8"
+						}
+					}
+				}
+			}
+		
+		},
+		//论坛
+		{
+			"path": "pages/cloudPlatfrom/index",
+			"style": {
+				"navigationBarTitleText": "异常管理",
+				"onReachBottomDistance": 60,
+				"enablePullDownRefresh": true
+			}
+		},
+		
+		{
+			"path": "pages/hello",
+			"style": {
+				"navigationBarTitleText": "hello uniApp",
+				"onReachBottomDistance": 60,
+				"enablePullDownRefresh": true
+			}
+		},
+		
+		{
+			"path": "pages/login/index"
+		},
+		{
+			"path": "pages/login/findpwd"
+		},
+		{
+			"path": "pages/register/index"
+		}, {
+			"path": "pages/user/index"
+		},
+		{
+			"path": "pages/user/info"
+		},
+		{
+			"path": "pages/user/user_head"
+		},
+		{
+			"path": "pages/user/password"
+		},
+		
+		{
+			"path": "pages/notice/my"
+		},
+		{
+			"path": "pages/comment/my",
+			"style": {
+				"navigationBarTitleText": "我的评论",
+				"onReachBottomDistance": 60,
+				"enablePullDownRefresh": true
+			}
+		},
+	
+		{
+			"path": "pages/user_address/my"
+		},
+		{
+			"path": "pages/user_address/add"
+		},
+		{
+			"path": "pages/user_address/edit"
+		},
+	
+		{
+			"path": "pages/user/set",
+			"style": {
+				"navigationBarTitleText": "用户设置"
+			}
+		},
+		{
+			"path": "pages/kefu/index"
+		},
+		
+		{
+			"path": "pages/comManage/index/index",
+			"style": {
+				"navigationBarTitleText": "身份认证",
+				"enablePullDownRefresh": true
+			}
+		}, 
+		{
+			"path": "pages/comManage/ContactPerson/ContactPerson",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		
+		}, 
+		{
+			"path": "pages/comManage/detail/detail",
+			"style": {
+				"navigationBarTitleText": "联系人详情",
+				"enablePullDownRefresh": false
+			}
+		
+		},
+		{
+			"path" : "pages/comManage/editAddressBook/editAddressBook",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "批量删除联系人",
+				"enablePullDownRefresh": false
+			}        
+		},
+		{
+			"path" : "pages/comManage/setting/setting",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}        
+		},
+
+		//h互动营销
+		{
+			"path" : "pages/interactMarket/index",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "反调试技术",
+				"enablePullDownRefresh": false
+			}        
+		},
+			//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+			{
+				"path": "pages/main/splash",
+				"style": {}
+			},
+			{
+				"path": "pages/main/settings",
+				"style": {}
+			},
+			{
+				"path": "pages/main/login",
+				"style": {}
+			},
+			{
+				"path": "pages/main/shipin",
+				"style": 
+				{
+					"navigationBarTitleText": "详情展示"
+				}   
+			},
+			{
+				"path": "pages/main/setup",
+				"style": {}
+			},
+			{
+				"path": "pages/main/chat",
+				"style": {"navigationBarTitleText": "聊天记录"}
+			},
+			//h互动营销
+
+		{
+			"path": "pages/netTerminal/index",
+			"style": {
+				"navigationBarTitleText": "配置管理"
+			}
+		},
+		{
+			"path": "pages/mapSets/gas",
+			"style": {
+				"navigationBarTitleText": "加油站"
+			}
+		},
+		{
+			"path": "pages/mapSets/charg",
+			"style": {
+				"navigationBarTitleText": "充电设备"
+			}
+		},
+		{
+			"path": "pages/mapSets/car",
+			"style": {
+				"navigationBarTitleText": "车辆定位"
+			}
+		}
+        ,{
+            "path" : "pages/customerAnalysis/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "加密功能",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/customerAnalysis/analysisDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "客户详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		,{
+		    "path" : "pages/accredit/accreditDetail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "权限配置",
+		        // "enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [   {
+                        "text": "\ue62c",
+                        "fontSrc": "/static/iconfont.ttf",
+                        "fontSize": "22px"
+
+                    }],
+						"splitLine": {
+							"color": "#e8e8e8"
+						}
+					}
+				}
+		    }
+		    
+		} 
+,{
+            "path" : "pages/accredit/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "授权功能",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/cloudComputing/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "输入输出验证",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+		    "path" : "pages/contactCenter/index",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "日志功能",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+		    "path" : "pages/contactCenter/detail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "联系人详情",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+		    "path" : "pages/newMedia/index",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "授权功能",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+    ],
+	"subPackages": [{
+			"root": "pageforum",
+			"pages": [{
+					"path": "forum/show",
+					"style": {
+						"navigationBarTitleText": "汽车详情",
+						"onReachBottomDistance": 60,
+						"enablePullDownRefresh": true
+					}
+				}, 
+				{
+					"path": "forum_group/index",
+					"style": {
+						"navigationBarTitleText": "汽车详情",
+						"onReachBottomDistance": 60,
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path":"forum/new",
+					"style":{
+						"navigationBarTitleText":"新贴子"
+					}
+				},
+			
+				{
+					"path":"forum_paihang/index",
+					"style":{
+						"navigationBarTitleText":"排名榜"
+					}
+				},{
+					"path":"forum_home/index",
+					"style":{
+						"navigationBarTitleText":"个人主页"
+					}
+				},{
+					"path":"forum/user",
+					"style":{
+						"navigationBarTitleText":"我的"
+					}
+				},{
+					"path":"forum_comment/my",
+					"style":{
+						"navigationBarTitleText":"我的评论"
+					}
+				}
+			]
+		}
+	
+	],
+	"preloadRule": {
+		"pages/cloudPlatfrom/index": {
+			"network": "all",
+			"packages": ["pageforum"]
+		}
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "网络信息",
+		"navigationBarBackgroundColor": "#3c9cff",
+		"backgroundColor": "#3c9cff"
+	},
+	"tabBar": {
+		"color": "#bbbbbb",
+		"selectedColor": "#3c9cff",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"iconWidth": "26px",
+		"list": [
+			{
+			    "pagePath" : "pages/index/index",
+			    "iconPath" : "static/tab_class.png",
+			    "selectedIconPath" : "static/tab_class.png",
+			    "text" : "首页"
+			},
+			{
+				"pagePath": "pages/work/work",
+				"iconPath": "static/tarbar/workbench.png",
+				"selectedIconPath": "static/tarbar/workbenchSel.png",
+				"text": "工作台"
+			},
+			{
+				"pagePath": "pages/wkiwi-user/wkiwi-user",
+				"iconPath": "static/tarbar/me.png",
+				"selectedIconPath": "static/tarbar/meSel.png",
+				"text": "个人"
+			}
+		]
+	}
+}

@@ -1,0 +1,166 @@
+/*水平布局*/
+.row {
+    display: flex;
+    flex-direction: row;
+}
+/*垂直布局*/
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.margin_stand-samll{
+	margin:5px 0;
+}
+.column_justify_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.column_align_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row_justify_center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row_align_center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*水平布局均分*/
+.row_space {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.row_between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*自动换行*/
+.row_wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*文字不换行*/
+.text-ellipsis {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.pink {
+    color: #C4100A;
+}
+
+/*容器*/
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wide {
+    font-weight: 600 !important;
+}
+.thicker{
+	font-weight: 900 !important;
+}
+
+.font-small {
+    font-size: 24rpx !important;
+}
+
+.font-middle {
+    font-size: 28rpx !important;
+}
+
+.font-big {
+    font-size: 32rpx !important;
+}
+
+.font-bigger {
+    font-size: 40rpx !important;
+}
+
+.blue {
+    color: #40A2ED;
+}
+
+.main_color {
+    color: #303133;
+}
+
+.normal_color {
+    color: #606266;
+}
+
+.grey {
+    color: #909399;
+}
+
+.green {
+    color: #76B64A;
+}
+
+/*padding*/
+.padding_stand-samll {
+    padding: 5rpx 0;
+}
+
+.padding_stand-middle {
+    padding: 15rpx 0;
+}
+
+.padding_stand-big {
+    padding: 20rpx 0;
+}
+
+.margin-lr {
+    margin: 0 10rpx;
+}
+
+.left {
+    margin-right: auto;
+}
+
+.right {
+    margin-left: auto;
+}
+
+.cover {
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 10;
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+.split_line{
+	width: 100%;
+	height: 20rpx;
+	background-color: #F0F0F0;
+}
+.charts-box {
+  width: 100%;
+  height: 300px;
+}

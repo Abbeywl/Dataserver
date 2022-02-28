@@ -1,0 +1,25 @@
+[{
+ 		"series": [{
+ 			"color": "#24ABFD",
+ 			"data": 0.18,
+ 			"index": 0,
+ 			"legendShape": "circle",
+ 			"name": "已完成率",
+ 			"pointShape": "circle",
+ 			"show": true,
+ 			"type": "arcbar"
+ 		}]
+ 	},
+ 	{
+ 		"series": [{
+ 			"color": "#F04864",
+ 			"data": 0.25,
+ 			"index": 0,
+ 			"legendShape": "circle",
+ 			"name": "未完成率",
+ 			"pointShape": "circle",
+ 			"show": true,
+ 			"type": "arcbar"
+ 		}]
+ 	}
+ ]
